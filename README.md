@@ -22,9 +22,14 @@
 | 檔案 | 說明 |
 |---|---|
 | `index.html` | 整個網頁(單一檔案,離線可用,不需要伺服器) |
+| `ga-id.txt` | (選用)Google Analytics 評估 ID;沒有這個檔就完全不統計。設定方式見 [`docs/analytics-sop.md`](docs/analytics-sop.md) |
 | `docs/` | 內容核對報告與佈局規格 |
 | `preview/` | 預覽截圖 |
 | `LICENSES.md` | 第三方授權(three.js、webm-muxer,皆為 MIT) |
+
+## 隱私
+- 預設**完全離線、不傳送任何資料**;學習進度只存在你自己的瀏覽器。
+- 若發佈者另外放了 `ga-id.txt`,網頁才會啟用匿名的 Google Analytics 訪客計數(只計造訪次數,不含學習內容與進度),讀者可在「設定」關閉,或開啟瀏覽器的 Do Not Track。
 
 ## 發佈到 GitHub Pages
 1. 在 GitHub 建立新倉庫(Pages 免費版需要**公開**倉庫)。
